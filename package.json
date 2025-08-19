@@ -1,0 +1,39 @@
+{
+  "name": "appointment-system",
+  "version": "1.0.0",
+  "description": "Full-stack Appointment Scheduling System",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm install && npm start",
+    "client": "cd frontend && npm install && npm start",
+    "build": "cd frontend && npm install && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "appointment",
+    "scheduling",
+    "booking",
+    "react",
+    "nodejs",
+    "express"
+  ],
+  "author": "Appointment System Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/appointment-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/appointment-system/issues"
+  },
+  "homepage": "https://github.com/your-username/appointment-system#readme"
+}

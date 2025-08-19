@@ -5,9 +5,6 @@ import {
   Typography,
   Button,
   IconButton,
-  Menu,
-  MenuItem,
-  Avatar,
   Box,
   Drawer,
   List,
@@ -20,21 +17,13 @@ import {
 } from '@mui/material';
 import {
   Menu as MenuIcon,
-  Dashboard as DashboardIcon,
   Event as EventIcon,
-  Person as PersonIcon,
-  AdminPanelSettings as AdminIcon,
-  Logout as LogoutIcon,
-  Login as LoginIcon,
-  PersonAdd as RegisterIcon,
   Home as HomeIcon,
-  Add as AddIcon,
 } from '@mui/icons-material';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const location = useLocation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
